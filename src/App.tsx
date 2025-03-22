@@ -7,6 +7,12 @@ import SignInPage from './routes/Signin'
 import SignUpPage from './routes/Signup'
 import ProtectedRoutes from './layouts/protected-routes'
 import MainLayout from './layouts/MainLayout'
+import Generate from './components/Generate'
+import Dashboard from './routes/Dashboard'
+import CreateEditPage from './routes/CreateEditPage' 
+import MockLoadPage from './routes/MockLoadPage'
+import MockInterviewPage from './routes/MockInterviewPage'
+import FeedBack from './routes/FeedBack'
 const App = () => {
   return (
     <Router>
@@ -27,6 +33,17 @@ const App = () => {
         <Route element={<ProtectedRoutes>
           <MainLayout/>
         </ProtectedRoutes>}>
+
+          <Route element={<Generate/>} path="/generate">
+            <Route index element={<Dashboard/>}/>
+            <Route path=":interviewId" element={<CreateEditPage/>}/>
+            <Route path="interview/:interviewId" element={<MockLoadPage />} />
+            <Route
+              path="interview/:interviewId/start"
+              element={<MockInterviewPage />}
+            />
+            <Route path="feedback/:interviewId" element={<FeedBack />} />
+          </Route>
 
         </Route>
       </Routes>
