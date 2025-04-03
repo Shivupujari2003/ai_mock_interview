@@ -13,6 +13,9 @@ import CreateEditPage from './routes/CreateEditPage'
 import MockLoadPage from './routes/MockLoadPage'
 import MockInterviewPage from './routes/MockInterviewPage'
 import FeedBack from './routes/FeedBack'
+import Contact from './components/Contact'
+import About from './components/ui/About'
+
 const App = () => {
   return (
     <Router>
@@ -20,6 +23,8 @@ const App = () => {
         {/* public */}
         <Route element={<PublicLayout/>}>
           <Route index element={<Homepage/>}/>
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
         </Route>
 
         {/* Auth layout */}

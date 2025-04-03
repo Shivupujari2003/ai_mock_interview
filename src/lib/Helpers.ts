@@ -11,8 +11,8 @@ export const MainRoutes = [
       label: "About Us",
       href: "/about",
     },
-    {
-      label: "Services",
-      href: "/services",
-    },
+    // {
+    //   label: "Services",
+    //   href: "/services",
+    // },
   ];
