@@ -1,5 +1,5 @@
 import { cn } from '@/lib/utils';
-import React from 'react'
+// import React from 'react'
 import {Loader} from "lucide-react"
 const LoaderPage = ({className}:{className?:string}) => {
   return (

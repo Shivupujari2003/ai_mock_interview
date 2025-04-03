@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import Headings from '@/components/Headings'
 // import { InterviewPin } from "@/components/pin";
 import { Button } from "@/components/ui/button";

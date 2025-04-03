@@ -4,7 +4,7 @@ import MarqueImg from "@/components/MarqueImg";
 import Container from "@/components/Container";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import React from 'react'
+// import React from 'react'
 
 const Homepage = () => {
   return (

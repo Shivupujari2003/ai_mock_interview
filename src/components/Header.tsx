@@ -1,9 +1,9 @@
-import React from 'react'
+// import React from 'react'
 import {cn} from "@/lib/utils";
 import {useAuth} from "@clerk/clerk-react"
 import  Container  from './Container';
 import LogoContainer from './LogoContainer';
-import Footer from './Footer';
+// import Footer from './Footer';
 import { NavLink } from 'react-router-dom';
 import NavigationRoutes from './NavigationRoutes';
 import ProfileContainer from './ProfileContainer';

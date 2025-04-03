@@ -1,6 +1,6 @@
 import { cn } from '@/lib/utils';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@radix-ui/react-tabs';
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { TooltipButton } from './TooltipButton';
 import { Volume2, VolumeX } from 'lucide-react';
 import RecordAnswer from './RecordAnswer';

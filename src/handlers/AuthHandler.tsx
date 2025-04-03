@@ -6,7 +6,7 @@ import { doc, getDoc, serverTimestamp, setDoc } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 
-import React from 'react'
+// import React from 'react'
 
 const AuthHandler = () => {
     const { isSignedIn } = useAuth();
